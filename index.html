@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="./index1.css">
+    <link rel="stylesheet" href="./index2.css">
+    <script src="./index.js"></script>
+    <link rel="shortcut icon" href="./image/logo1.png" type="image/x-icon">
+
+
+
+    <script src="./particles.js"></script>
+    <script src="./particles.json"></script>
+    <title>Vikas Sherke</title>
+
+</head>
+
+<body>
+
+    <div class="loading"></div>
+ 
+    <div class="naviblock" id="naviblock">
+        <div class="navleft">
+            <div class="navlogo" onclick="logo()"></div>
+        </div>
+        <div class="navright">
+            <div class="navbtn" id="aboutbtn" onclick="about()">About</div>
+            <div class="navbtn" id="projectsbtn" onclick="projects()">Projects</div>
+            <div class="navbtn" id="skillsbtn" onclick="skills()">Skills</div>
+            <div class="navbtn" id="contactbtn" onclick="contact()">Contact</div>
+        </div>
+        <div class="navham"></div>
+    </div>
+
+    <div class="navfullblock">
+        <div class="navfullbtn" id="nfabout" onclick="fullabout()">About</div>
+        <div class="navfullbtn" id="nfprojects" onclick="fullprojects()">Projects</div>
+        <div class="navfullbtn" id="nfskills" onclick="fullskills()">Skills</div>
+        <div class="navfullbtn" id="nfcontact" onclick="fullcontact()">Contact</div>
+    </div>
+
+    <div class="resumeblock">
+        <div class="resumehead">Resume</div>
+        <div class="resumesection">
+            <iframe src="./doc/Resume.pdf" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div class="resumecross"></div>
+    </div>
+
+    <div class="container">
+        <div class="home" id="homesection" style="scroll-snap-align: start;">
+            <div id="particles-js"></div>
+            <p>Hi, I Am <br> <span>Vikas Sherke</span> <br>A Full Stack Developer</p> <br>
+            <!-- <div class="resumebtn">Resume</div> -->
+            <div class="arrow" onclick="arrow()"></div>
+        </div>
+        <div class="about" id="aboutsection" style="scroll-snap-align: start;">
+            <div class="aboutleft">
+                <h2 id="h2">About Me</h2>
+                <p id="p">Hi, my name is Vikas Sherke. I am an engineering student and currently pursuing B.Tech from Shri G.S Institute of Technology and Science, Indore. I am a poster designer and event manager for the Club <a href="https://www.instagram.com/ingenious_sgsits/?hl=en" target="_blank" class="alink">Ingenious</a>, which is the official literary club of our College. I am also a member of the Webpage Design team for the Entrepreneur Cell or <a href="http://ecellsgsits.com" target="_blank" class="alink">ECell</a> Club of our college. I have my interests in projects related to Webdevelopment, OpenCV, Machine Learning and I am currently seeking for an Internship which would help me grow and enhance my technical skills and knowledge in Webdevelopment.</p>
+
+                <div class="day"></div>
+                <div class="night"></div>
+            </div>
+
+            <div class="aboutright"></div>
+        </div>
+        <div class="projects" id="projectssection" style="scroll-snap-align: start;">
+            <div class="projectsblock">
+                <div class="pbtop">My Projects</div>
+                <div class="pbbottom">
+
+                    <div class="myproject" id="EagleOCR">
+                        <div class="myprotop">
+                            <img src="./media/EagleOCR.jpg" alt="" srcset="">
+                        </div>
+                        <div class="myprobottom">Eagle OCR</div>
+                    </div>
+                    <div class="myproject" id="RedRoseRestaurant">
+                        <div class="myprotop">
+                            <img src="./media/RedRoseRestaurant.jpg" alt="" srcset="">
+                        </div>
+                        <div class="myprobottom">Red Rose Restaurant</div>
+                    </div>
+                    <div class="myproject" id="GoaTripForm">
+                        <div class="myprotop">
+                            <img src="./media/GoaTripForm.jpg" alt="" srcset="">
+                        </div>
+                        <div class="myprobottom">Goa Trip Form</div>
+                    </div>
+                    <div class="myproject" id="RCBJersey">
+                        <div class="myprotop">
+                            <img src="./media/RCB Jersey.jpg" alt="" srcset="">
+                        </div>
+                        <div class="myprobottom">RCB Jersey Sale</div>
+                    </div>
+                    <div class="myproject" id="FruitBlast">
+                        <div class="myprotop">
+                            <img src="./media/FruitBlast.jpg" alt="" srcset="">
+                        </div>
+                        <div class="myprobottom">Fruit Blast Game</div>
+                    </div>
+                    <div class="myproject" id="MechanicalPortFolio">
+                        <div class="myprotop">
+                            <img src="./media/MechanicalPortFolio.png" alt="" srcset="">
+                        </div>
+                        <div class="myprobottom">Port Folio</div>
+                    </div>
+                    <div class="myproject" id="PlanetFitnessGym">
+                        <div class="myprotop">
+                            <img src="./media/PlanetFitnessGym.jpg" alt="" srcset="">
+                        </div>
+                        <div class="myprobottom">Planet Fitness Gym</div>
+                    </div>
+                    <div class="myproject" id="SpaceInvader">
+                        <div class="myprotop">
+                            <img src="./media/SpaceInvader.jpg" alt="" srcset="">
+                        </div>
+                        <div class="myprobottom">Space Invader Game</div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="skills" id="skillssection" style="scroll-snap-align: start;">
+            <div class="skillsleft">
+                <div class="sltop">My Tools</div>
+                <div class="slbottom">
+                    <div class="slbtool">
+                        <div class="slbttop" id="html"></div>
+                        <div class="slbtbottom" id="texthtml">HTML</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="css"></div>
+                        <div class="slbtbottom" id="textcss">CSS</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="javascript"></div>
+                        <div class="slbtbottom" id="textjavascript">JavaScript</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="jquery"></div>
+                        <div class="slbtbottom" id="textjquery">JQuery</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="reactjs"></div>
+                        <div class="slbtbottom" id="textreactjs">React.JS</div>
+                    </div>
+                    <!-- <div class="slbtool">
+                        <div class="slbttop" id="angularjs"></div>
+                        <div class="slbtbottom" id="textangularjs">Angular.JS</div>
+                    </div> -->
+                    <div class="slbtool">
+                        <div class="slbttop" id="php"></div>
+                        <div class="slbtbottom" id="textphp">PHP</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="mysql"></div>
+                        <div class="slbtbottom" id="textmysql">MySQL</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="nodejs"></div>
+                        <div class="slbtbottom" id="textnodejs">Node.JS</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="mongodb"></div>
+                        <div class="slbtbottom" id="textmongodb">MongoDB</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="bootstrap"></div>
+                        <div class="slbtbottom" id="textbootstrap">Bootstrap</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="materializejs"></div>
+                        <div class="slbtbottom" id="textmaterializejs">Materialize.JS</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="photoshop"></div>
+                        <div class="slbtbottom" id="textphotoshop">PhotoShop</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skillsright">
+                <div class="srtop">Other Skills</div>
+                <div class="srbottom">
+                    <div class="slbtool">
+                        <div class="slbttop" id="python"></div>
+                        <div class="slbtbottom" id="textpython">Python</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="opencv"></div>
+                        <div class="slbtbottom" id="textopencv">OpenCV</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="pandas"></div>
+                        <div class="slbtbottom" id="textpandas">Pandas</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="numpy"></div>
+                        <div class="slbtbottom" id="textnumpy">Numpy</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="androidstudio"></div>
+                        <div class="slbtbottom" id="textandroidstudio">XML/Java</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="matlab"></div>
+                        <div class="slbtbottom" id="textmatlab">MATLAB</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="uipath"></div>
+                        <div class="slbtbottom" id="textuipath">UI Path</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="git"></div>
+                        <div class="slbtbottom" id="textgit">Git</div>
+                    </div>
+                    <div class="slbtool">
+                        <div class="slbttop" id="c"></div>
+                        <div class="slbtbottom" id="textc">C/C++</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contactsection" style="scroll-snap-align: start;">
+            <div class="contactleft">
+                <div class="clhead">Links</div>
+                <div class="cllink" id="cllink1">
+                    <div class="cllogo" id="cllogo1"></div>
+                    <div class="clline">/sherke</div>
+                </div>
+                <div class="cllink" id="cllink2">
+                    <div class="cllogo" id="cllogo2"></div>
+                    <div class="clline">/vikas.sherke.1</div>
+                </div>
+                <div class="cllink" id="cllink3">
+                    <div class="cllogo" id="cllogo3"></div>
+                    <div class="clline">/vikassherke</div>
+                </div>
+                <div class="cllink" id="cllink4">
+                    <div class="cllogo" id="cllogo4"></div>
+                    <div class="clline">sherkevikas@gmail.com</div>
+                </div>
+                <div class="cllink" id="cllink5">
+                    <div class="cllogo" id="cllogo5"></div>
+                    <div class="clline">+91 9685451230</div>
+                </div>
+            </div>
+            <div class="contactright">
+                <div class="crtop">Quick Message</div>
+                <div class="crbottom">
+                    <form action="" method="POST">
+                        <input type="text" name="Name" id="myname" placeholder="Your Name">
+                        <input type="text" name="Email" id="myemail" placeholder="Your Email ID">
+                        <textarea name="mytext" id="mytext" cols="30" rows="10"
+                            placeholder="Your Message ......"></textarea>
+
+                        <button type="submit" id="send">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./particles.js"></script>
+    <script src="./js/app.js"></script>
+
+
+    <script>
+
+        
+
+
+        particlesJS.load('particles-js', 'particles.json', function () {
+            console.log('particles.json loaded...do your thing!');
+        });
+
+        function arrow(e){
+            window.location.href = "#aboutsection"
+        }
+
+        function logo(e) {
+            window.location.href = "#homesection";
+
+        }
+        function about(e) {
+            window.location.href = "#aboutsection";
+        }
+        function projects(e) {
+            window.location.href = "#projectssection";
+
+        }
+        function skills(e) {
+            window.location.href = "#skillssection";
+
+        }
+        function contact(e) {
+            window.location.href = "#contactsection";
+
+        }
+
+
+
+
+        
+        function fullabout(e) {
+            window.location.href = "#aboutsection";
+
+        }
+        function fullprojects(e) {
+            window.location.href = "#projectssection";
+
+        }
+        function fullskills(e) {
+            window.location.href = "#skillssection";
+
+        }
+        function fullcontact(e) {
+            window.location.href = "#contactsection";
+
+        }
+
+
+
+
+    </script>
+    <script>
+
+    </script>
+</body>
+
+</html>

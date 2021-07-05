@@ -1,0 +1,1003 @@
+@media only screen and (min-width:1000px){
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    body{
+    
+        position: relative;
+    
+        padding: 0%;
+        margin: 0%;
+    
+    }
+
+
+    .loading{
+        z-index: 1000;
+        width: 100px;
+        height: 100px;
+
+        background-image: url(./image/loading.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        position: fixed;
+        top: calc(50vh - 50px);
+        left: calc(50vw - 50px);
+    }
+    
+    .container{
+        position: relative;
+    
+        width: 100vw;
+        height: 100vh;
+    
+        overflow-y: auto;
+        overflow-x: hidden;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+    
+    ::-webkit-scrollbar{
+        /* border-left: 2px solid white; */
+        /* cursor: pointer; */
+        width: 15px;
+    }
+    ::-webkit-scrollbar-track{
+        border-left: 2px solid darkorchid;
+        /* border-right: 2px solid darkorchid; */
+        background: white;
+    }
+    ::-webkit-scrollbar-thumb{
+        /* border-left: 2px solid white; */
+        width: 13px;
+        background: darkorchid;
+    }
+    
+    
+    
+    .naviblock{
+        box-sizing: border-box;
+        padding-right: 20px;
+        z-index: 500;
+        overflow: hidden;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 50px;
+        background-color:transparent;
+    
+        font-size: 23px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        transition: ease-in-out 0.25s;
+    }
+    
+    .navblocknew{
+        background-color:white;
+        border-bottom: 2px solid darkorchid;
+        overflow: hidden;
+        height: 50px;
+        font-size: 23px;
+        box-shadow: 1px 1px 5px rgb(137, 85, 163);
+    }
+    
+    .navleft{
+        width: 40%;
+        height: 100%;
+    
+        /* background-color: yellow; */
+    }
+    
+    .navlogo{
+        box-sizing: border-box;
+        width: 50px;
+        height: 100%;
+        /* background-color: hotpink; */
+        background-image: url(./image/logo2.png);
+        background-size: 90%;
+        background-repeat: no-repeat;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    .navlogonew{
+        background-image: url(./image/logo1.png);
+    }
+    
+    .navright{
+        width: 35%;
+        min-width: 500px;
+        height: 100%;
+    
+        /* background-color: goldenrod; */
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .navbtn{
+        box-sizing: border-box;
+        padding-top: 10px;
+        width: 18%;
+        height: 65%;
+        /* background-color: hotpink; */
+        border:2px solid transparent;
+        /* border-radius: 7px; */
+        cursor: pointer;
+        font-family: 'Baloo Tammudu 2', cursive;
+        font-weight: bold;
+
+        transition: 0.2s;
+    
+        color: white;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbtn:hover{
+        border-bottom: 2px solid white;
+        /* color: darkorchid; */
+        /* background-color: white; */
+    }
+    
+    .navbtnnew{
+        transition: 0.2s;
+        color: darkorchid;
+        /* background-color: darkorchid;
+        border:2px solid darkorchid; */
+        /* border-radius: 7px; */
+        cursor: pointer;
+    }
+    
+    .navbtnnew:hover{
+        border-bottom: 2px solid darkorchid;
+        /* background-color: white;
+        color: darkorchid;
+        border: 2px solid darkorchid; */
+    }
+
+    .navham{
+        display: none;
+    }
+    
+    
+    /* _________________________________________ */
+    
+    .resumeblock{
+        z-index: 10;
+        position: fixed;
+        top: 7%;
+        left: 5%;
+    
+        width: 90%;
+        height: 90%;
+    
+        background-color: white;
+        border: 2px solid white;
+    
+        display: flex;
+        flex-direction: column;
+        box-shadow: 2px 2px 7px rgb(96, 48, 121);
+    }
+    
+    .resumehead{
+        width: 100%;
+        height: 45px;
+        background-color: darkorchid;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-family: 'Baloo Tammudu 2', cursive;
+        font-size: 28px;
+        color: white;
+        font-weight: bold;
+        box-sizing: border-box;
+        padding-top: 17px;
+    }
+    .resumesection{
+        width: 100%;
+        height: calc(100% - 45px);
+    }
+    
+    
+    
+    .resumecross{
+        cursor: pointer;
+        width:40px;
+        height: 40px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        /* background-color: red; */
+        z-index: 15;
+    
+        border-radius: 50%;
+        background-image: url(./image/cross.png);
+        background-size: 115%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    
+    
+    /* _____________________________________________ */
+    .home{
+        background-color: darkorchid;
+    
+        
+        /* border-bottom: 1px solid black; */
+        width: 100vw;
+        height: 100vh;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #particles-js{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .home p{
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        position: absolute;
+        /* top: 25px; */
+        /* left: 25px; */
+    
+        font-family: 'Baloo Tammudu 2', cursive;
+        font-size: 55px;
+        line-height: 70px;
+        
+        color: white;
+        /* cursor: pointer; */
+        overflow: hidden;
+        
+    
+        text-align: center;
+    }
+    .home p span{
+        overflow: hidden;
+        font-size: 65px;
+        font-weight: bold;
+        color: white;
+        /* text-shadow: 2px 2px 0px white; */
+    }
+    .home .resumebtn{
+        overflow: hidden;
+        position: absolute;
+        top: 68vh;
+    
+        width: 170px;
+        height: 50px;
+        border: 3px solid white;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-family: 'Baloo Tammudu 2', cursive;
+        font-size: 35px;
+        font-weight: bold;
+        color: white;
+        background-color: darkorchid;
+    
+        cursor: pointer;
+    
+        box-sizing: border-box;
+        padding-top: 20px;
+    }
+    
+    .resumebtn:hover{
+        color: darkorchid;
+        background-color: white;
+    
+    }
+    
+    .arrow{
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        /* background-color: red; */
+    
+        overflow: hidden;
+        position: absolute;
+        top: 80vh;
+    
+        background-image: url(./image/arrow2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    
+        animation-name: arrow;
+        animation-duration: 800ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes arrow{
+        0%{
+            top:80vh;
+        }
+        50%{
+            top: 83vh;
+        }
+        100%{
+            top:80vh;
+        }
+    }
+    
+    /* ____________________________________________________ */
+    
+    .about{
+        background-color: white;
+        /* border-bottom: 1px solid black; */
+        width: 100vw;
+        height: 100vh;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .aboutleft{
+        position: relative;
+        margin-top: 50px;
+        border: 2px solid darkorchid;
+        width: 60%;
+        height: 80%;
+
+        overflow-y: scroll;
+        
+        box-sizing: border-box;
+        
+        padding: 40px;
+    }
+    .aboutleft h2{
+        line-height: 20px;
+        font-family: 'Baloo Tammudu 2', cursive;
+        font-size: 35px;
+        font-weight: bold;
+        color: darkorchid;
+        /* background-color: darkorchid; */
+    
+    }
+    .aboutleft p{
+        font-family: 'Baloo Tammudu 2', cursive;
+        font-size: 25px;
+        /* font-weight: bold; */
+        line-height: 35px;
+        word-spacing: 10px;
+        color: darkorchid;
+    }
+
+    .aboutleft p a{
+        color: darkorchid;
+    }
+
+
+    .aboutleft .day{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    
+        cursor: pointer;
+    
+        width: 45px;
+        height: 45px;
+    
+        /* border: 2px solid darkorchid; */
+        /* background-color: red; */
+    
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(./image/sun2.png);
+    }
+    
+    .aboutleft .night{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    
+        cursor: pointer;
+    
+        width: 45px;
+        height: 45px;
+    
+        /* border: 2px solid darkorchid; */
+        /* background-color: red; */
+    
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(./image/moon1.png);
+    }
+    
+    
+    .aboutright{
+        margin-top: 50px;
+        /* border: 2px solid darkorchid; */
+    
+        background-image: url(./image/asset2.png);
+        background-size: 110%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 35%;
+        height: 80%;
+    }
+    
+    /* ____________________________________________________________ */
+    
+    .projects{
+        background-color: darkorchid;
+        /* border-bottom: 1px solid black; */
+        width: 100vw;
+        height: 100vh;
+    
+            
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .projectsblock{
+    
+        box-sizing: border-box;
+        margin-top: 50px;
+        overflow: hidden;
+        padding: 0%;
+        width: 70%;
+        height:80%;
+        border: 2px solid white;
+    }
+    
+    .pbtop{
+        box-sizing: border-box;
+        width: 100%;
+        height: 10%;
+        background-color: white;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        
+        font-family: 'Baloo Tammudu 2', cursive;
+        font-size: 35px;
+        box-sizing: border-box;
+        padding-top: 15px;
+        
+        color: darkorchid;
+    
+    }
+    
+    .pbbottom{
+        box-sizing: border-box;
+        /* padding-right: 150px; */
+        width: 100%;
+        height: 90%;
+    
+        position: relative;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    
+    
+        overflow-y: scroll;
+        overflow-x: hidden;
+    
+        /* position: static; */
+    
+    
+    }
+    
+    
+    .myproject{
+        box-shadow: 2px 2px 4px rgb(80, 25, 107);
+        /* justify-self: center; */
+        /* align-self: center; */
+        width: 300px;
+        height: 200px;
+        background-color: white;
+        border: 2px solid white;
+    
+        margin:20px;
+        cursor: pointer;
+
+        transition: 0.3s;
+    }
+    .myproject:hover{
+        transform: scale(1.03);
+    }
+    
+    .myprotop{
+        width: 100%;
+        height: 85%;
+        background-color: red;
+    
+    }
+    .myprotop img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .myprobottom{
+        width: 100%;
+        height: 15%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-family: 'Baloo Tammudu 2', cursive;
+        font-size: 25px;
+        box-sizing: border-box;
+        padding-top: 15px;
+        
+        color: darkorchid;
+    }
+    
+    /* _________________________________________________________________ */
+    
+    
+    
+    
+    .skills{
+        background-color: white;
+        /* border-bottom: 1px solid black; */
+        width: 100vw;
+        height: 100vh;
+    
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .skillsleft{
+    
+        box-sizing: border-box;
+        margin-top: 50px;
+        overflow: hidden;
+        padding: 0%;
+        width: 50%;
+        height:80%;
+        border: 2px solid darkorchid;
+    }
+    
+    .sltop{
+        overflow: hidden;
+        width: 100%;
+        height: 10%;
+    
+        background-color: darkorchid;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-family: 'Baloo Tammudu 2', cursive;
+        font-size: 35px;
+        box-sizing: border-box;
+        padding-top: 15px;
+        
+        color: white;
+    
+    }
+    .slbottom{
+        width: 100%;
+        height: 90%;
+    
+        /* background-color: lime; */
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-y:scroll ;
+    }
+    
+    
+    .slbtool{
+        margin: 30px;
+        width: 120px;
+        height: 160px;
+    
+        /* background-color: red; */
+    }
+    .slbttop{
+        width: 100%;
+        height: 80%;
+        /* background-color: darkseagreen; */
+    
+        background-position: center;
+        background-size: 60%;
+        background-repeat: no-repeat;
+    }
+    #html{
+        background-image: url(./image/html.png);
+    }
+    #css{
+        background-image: url(./image/css.png);
+    }
+    #javascript{
+        background-image: url(./image/javascript.png);
+    }
+    #jquery{
+        background-image: url(./image/jquery.png);
+    }
+    #reactjs{
+        background-image: url(./image/reactjs.png);
+    }
+    #angularjs{
+        background-image: url(./image/angularjs.png);
+    }
+    #php{
+        background-image: url(./image/php.png);
+    }
+    #mysql{
+        background-image: url(./image/mysql.png);
+    }
+    #nodejs{
+        background-image: url(./image/nodejs.png);
+    }
+    #mongodb{
+        background-image: url(./image/mongodb.png);
+    }
+    #bootstrap{
+        background-image: url(./image/bootstrap.png);
+    }
+    #materializejs{
+        background-image: url(./image/materializejs.png);
+    }
+    #photoshop{
+        background-image: url(./image/photoshop.png);
+    }
+    
+    .slbtbottom{
+        cursor: pointer;
+        width: 100%;
+        height: 20%;
+        background-color: darkorchid;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-family: 'Baloo Tammudu 2', cursive;
+        font-size: 18px;
+        box-sizing: border-box;
+        padding-top: 12px;
+        
+        color: white;
+    
+    }
+    
+    
+    
+    .skillsright{
+        overflow: hidden;
+        box-sizing: border-box;
+        margin-top: 50px;
+        width: 30%;
+        height:80%;
+        border: 2px solid darkorchid;
+    
+        
+        /* background-image: url(./image/asset5.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center; */
+    
+    }
+    
+    .srtop{
+     
+        /* border-left: 2px solid darkorchid; */
+        width: 100%;
+        height: 10%;
+    
+        background-color: darkorchid;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-family: 'Baloo Tammudu 2', cursive;
+        font-size: 35px;
+        box-sizing: border-box;
+        padding-top: 15px;
+        
+        color: white;
+    }
+    .srbottom{
+        width: 100%;
+        height: 90%;
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-y:scroll ;
+    
+        /* background-color: lime; */
+    }
+    #python{
+        background-image: url(./image/python.png);
+    }
+    #opencv{
+        background-image: url(./image/opencv.png);
+    }
+    #pandas{
+        background-image: url(./image/pandas.png);
+    }
+    #numpy{
+        background-image: url(./image/numpy.png);
+    }
+    #androidstudio{
+        background-image: url(./image/androidstudio.png);
+    }
+    #matlab{
+        background-image: url(./image/matlab.png);
+    }
+    #uipath{
+        background-image: url(./image/uipath.png);
+    }
+    #git{
+        background-image: url(./image/git.png);
+    }
+    #c{
+        background-image: url(./image/c.png);
+    }
+    
+    
+    
+    /* _______________________________________________________________ */
+    .contact{
+        background-color: darkorchid;
+        /* border-bottom: 1px solid black; */
+        width: 100vw;
+        height: 100vh;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .contactleft{
+        margin-top: 50px;
+        width: 35%;
+        min-width: 500px;
+        height:80%;
+        /* border: 2px solid white; */
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .clhead{
+        box-sizing: border-box;
+        padding-top: 25px;
+        width: 90%;
+        height: 70px;
+        /* background-color: red; */
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-size: 45px;
+        font-family: 'Baloo Tammudu 2', cursive;
+        color: white;
+        font-weight: bold;
+    
+    }
+    
+    .cllink{
+        width: 90%;
+        height: 50px;
+        background-color: transparent;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        transition: 0.1s;
+    }
+    .cllink:hover{
+        transform: scale(1.02);
+    }
+
+    .cllogo{
+        /* background-color: violet; */
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #cllogo1{
+        background-image: url(./image/github.png);
+        background-size: 90%;
+    }
+    #cllogo2{
+        background-image: url(./image/facebook.png);
+    }
+    #cllogo3{
+        background-image: url(./image/instagram.png);
+        background-size: 90%;
+    }
+    #cllogo4{
+        background-image: url(./image/email.png);
+        background-size: 95%;
+    }
+    #cllogo5{
+        background-image: url(./image/whatsapp.png);
+    }
+    
+    .clline{
+        background-color: white;
+        width: calc(100% - 100px);
+        height: 80%;
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+        font-size: 25px;
+        box-sizing: border-box;
+        padding-top: 15px;
+        font-family: 'Baloo Tammudu 2', cursive;
+        color: darkorchid;
+        /* font-weight: bold; */
+    }
+    
+    
+    .contactright{
+        margin-top: 50px;
+        width: 35%;
+        min-width: 500px;
+        height:80%;
+        /* border: 2px solid white; */
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .crtop{
+        /* background-color: red; */
+        width: 90%;
+        height: 100px;
+    
+        box-sizing: border-box;
+        padding-top: 25px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-size: 45px;
+        font-family: 'Baloo Tammudu 2', cursive;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .crbottom{
+        /* background-color: red; */
+        width: 90%;
+        height: calc(100% - 170px);
+    
+    }
+    .crbottom form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+    }
+    
+    .crbottom form input{
+        border: 0px solid transparent;
+        width: 90%;
+        height: 40px;
+    
+        box-sizing: border-box;
+        padding-left: 10px;
+        /* padding-top: 5px; */
+        font-size: 22px;
+        font-family: 'Baloo Tammudu 2', cursive;
+        color: darkorchid;
+
+
+    
+        position: relative;
+        top:7px;
+    }
+    .crbottom form input::placeholder{
+        box-sizing: border-box;
+        padding-left: 10px;
+        /* padding-top: 5px; */
+        font-size: 22px;
+        font-family: 'Baloo Tammudu 2', cursive;
+        color: darkorchid;
+        text-align: start; 
+    
+        position: relative;
+        top: 7px;
+    
+    }
+    
+    #mytext{
+        width: 90%;
+        height: 50%;
+    
+        border: 0px;
+        box-sizing: border-box;
+        padding-left: 10px;
+        /* padding-top: 35px; */
+        font-size: 22px;
+        font-family: 'Baloo Tammudu 2', cursive;
+        color: darkorchid;
+    }
+    #mytext::placeholder{
+        padding-left: 10px;
+        color: darkorchid;
+    }
+    
+    #send{
+        width: 50%;
+        height: 50px;
+        cursor: pointer;
+    
+        background-color: white;
+        border: 2px solid darkorchid;
+        box-sizing: border-box;
+        /* padding-left: 10px; */
+        padding-top: 20px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Baloo Tammudu 2', cursive;
+        color: darkorchid;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #send:hover{
+        background-color: darkorchid;
+        border: 2px solid white;
+        color: white;
+    }
+}
