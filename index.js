@@ -281,6 +281,9 @@ $(document).ready(function () {
     $("#cllink5").click(function(){
         window.location = "https://web.whatsapp.com/"
     })
+    $("#cllink6").click(function(){
+        window.location = "https://www.linkedin.com/in/vikas-sherke-7987961a4/"
+    })
 
 
 
