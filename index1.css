@@ -360,7 +360,7 @@
         width: 60%;
         height: 80%;
 
-        overflow-y: scroll;
+        overflow-y: auto;
         
         box-sizing: border-box;
         
